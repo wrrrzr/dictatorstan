@@ -11,3 +11,15 @@ minetest.register_on_joinplayer(function(player)
 		number = 0xFFFFFF,
 	})
 end)
+
+core.register_chatcommand("init_state", {
+	privs = {
+		interact = true,
+	},
+	func = function(name, param)
+		if param == "" then
+			return false, "State name cannot be empty!"
+		end
+		return true, "State " .. param .. " created!"
+	end,
+})
