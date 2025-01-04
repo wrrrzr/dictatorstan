@@ -1,2 +1,2 @@
 # dictatorstan
-Luanti mod dictator simulator
+Luanti mod dictator simulator. Work in progress
