@@ -1,2 +1,4 @@
 # textdomain: dictatorstan
 Hello world!=Привет мир!
+State name cannot be empty!=Название государства не может быть пустым!
+State @1 created!=Государство @1 создано!

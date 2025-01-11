@@ -18,8 +18,8 @@ core.register_chatcommand("init_state", {
 	},
 	func = function(name, param)
 		if param == "" then
-			return false, "State name cannot be empty!"
+			return false, S("State name cannot be empty!")
 		end
-		return true, "State " .. param .. " created!"
+		return true, S("State @1 created!", param)
 	end,
 })
