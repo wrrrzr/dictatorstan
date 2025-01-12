@@ -2,3 +2,5 @@
 Hello world!=Привет мир!
 State name cannot be empty!=Название государства не может быть пустым!
 State @1 created!=Государство @1 создано!
+name: @1=название: @1
+dictator: @1=диктатор: @1
