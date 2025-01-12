@@ -1,6 +1,6 @@
 local S = core.get_translator("dictatorstan")
 
-local modpath = core.get_modpath("dictatorstan")
+modpath = core.get_modpath("dictatorstan")
 
 local state = dofile(modpath .. "/state.lua")
 

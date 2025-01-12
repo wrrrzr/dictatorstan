@@ -1,14 +1,13 @@
 local S = core.get_translator("dictatorstan")
 local M = {}
-
-M.states = {}
+local storage = dofile(modpath .. "/storage.lua")
 
 M.create_state = function(player, name)
-	M.states[name] = { dictator = player }
+	storage.set_table("states_" .. name, { dictator = player })
 end
 
 M.state_info = function(name)
-	local state = M.states[name]
+	local state = storage.get_table("states_" .. name)
 	if state == nil then
 		return S("State not found")
 	end
