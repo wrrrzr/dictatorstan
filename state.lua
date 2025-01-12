@@ -9,6 +9,9 @@ end
 
 M.state_info = function(name)
 	local state = M.states[name]
+	if state == nil then
+		return S("State not found")
+	end
 	return S("name: @1", name) .. "\n" .. S("dictator: @1", state.dictator)
 end
 
