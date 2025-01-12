@@ -4,18 +4,6 @@ modpath = core.get_modpath("dictatorstan")
 
 local state = dofile(modpath .. "/state.lua")
 
-core.register_on_joinplayer(function(player)
-	player:hud_add({
-		type = "text",
-		position = { x = 0.5, y = 0.5 },
-		offset = { x = 0, y = 0 },
-		text = S("Hello world!"),
-		alignment = { x = 0, y = -2 },
-		scale = { x = 100, y = 100 },
-		number = 0xFFFFFF,
-	})
-end)
-
 core.register_chatcommand("init_state", {
 	privs = {
 		interact = true,
