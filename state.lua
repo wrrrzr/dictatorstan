@@ -6,6 +6,9 @@ M.state_init = function(player, name)
 	if name == "" then
 		return false, S("State name cannot be empty!")
 	end
+	if storage.get_table("states_" .. name) ~= nil then
+		return false, S("State name already taken")
+	end
 	storage.set_table("states_" .. name, { dictator = player })
 	return true, S("State @1 created!", name)
 end

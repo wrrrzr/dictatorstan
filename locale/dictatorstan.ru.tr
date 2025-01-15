@@ -5,3 +5,4 @@ State @1 created!=Государство @1 создано!
 name: @1=название: @1
 dictator: @1=диктатор: @1
 State not found=Государство не найдено
+State name already taken=Данное имя уже занято
